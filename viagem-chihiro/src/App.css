@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --dark-10: #0b0a0a;
+  --dark-20: #ffffff;
+  --dark-30: #ffffff2d;
+  --brand-color: #f1a5b1;
+  --andada-font: "Andada Pro", serif;
+  --archivo-font: "Archivo", sans-serif;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../public/background/background-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: grid;
+  align-items: center;
+  grid-column: 2fr;
+  padding: 30px;
+}
+
+.navbar-logo {
+  grid-column-start: 1;
+}
+
+.navbar-logo > img {
+  width: 20%;
+}
+
+.navbar-links {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-links > a {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px 15px 0px 15px;
+}
+
+.navbar-links > a > img {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-20);
+  background-color: var(--dark-30);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+figure {
+  display: flex;
+  justify-content: end;
+}
+
+figure > img {
+  width: 65%;
+}
+
+figure {
+  animation: bounce 2s infinite;
+}
+
+.text-button {
+  color: var(--dark-20);
+}
+
+.content-text {
+  width: 502px;
+  height: 315px;
+  gap: 32px;
+}
+
+.content-text > h1 {
+  width: 174px;
+  height: 27px;
+  font-size: 18px;
+  line-height: 27.24px;
+  font-weight: 700;
+  font-family: var(--andada-font);
+}
+
+.content-text > h2 {
+  width: 445px;
+  height: 130px;
+  font-size: 60px;
+  line-height: 70.4px;
+  font-weight: 800;
+  font-family: var(--andada-font);
+}
+
+.content-text > p {
+  width: 488px;
+  height: 108px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-assista {
+  background-color: var(--brand-color);
+  border: none;
+  padding: 15px;
+  width: 240px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.button-trailer {
+  background-color: transparent;
+  border: 2px solid var(--brand-color);
+  padding: 15px;
+  width: 240px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.button-assista > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  color: var(--dark-10);
+}
+
+.button-trailer > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--dark-20);
+}
+
+.button-trailer:hover {
+  cursor: pointer;
+  background-color: var(--brand-color);
+}
