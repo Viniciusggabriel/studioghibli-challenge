@@ -10,7 +10,7 @@ const Article = () => {
         <div className="buttons">
           <Button className={"button-assista"}>
             <a href="https://www.netflix.com/br/title/60023642" target="_blank">
-              <img src="../../../public/image/play.svg" alt="play" />
+              <img src=".\public\image\play.svg" alt="play" />
               <span>Assista agora</span>
             </a>
           </Button>
