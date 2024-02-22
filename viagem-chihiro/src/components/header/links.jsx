@@ -6,28 +6,28 @@ const Links = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src=".\public\image\google.png" alt="wikipedia" />
+       <img src="/image/google.png" alt="wikipedia" />
       </a>
       <a
         href="https://www.facebook.com/StudioGhibliBrasil/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src=".\public\image\facebook.png" alt="facebook" />
+        <img src="\image\facebook.png" alt="facebook" />
       </a>
       <a
         href="https://twitter.com/ghibliusa"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src=".\public\image\twitter.png" alt="twitter" />
+        <img src="\image\twitter.png" alt="twitter" />
       </a>
       <a
         href="https://www.instagram.com/ghibli.style/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src=".\public\image\instagram.png" alt="instagram" />
+        <img src="\image\instagram.png" alt="instagram" />
       </a>
     </div>
   );
